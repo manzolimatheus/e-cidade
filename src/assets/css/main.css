@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('./form.css');
+@import url('./buttons.css');
+@import url('./spacing.css');
+@import url('./colors.css');
+@import url('./position.css');
+
+:root {
+    --primary: #00C2FF;
+    --primary-dark: #0085FF;
+    --secondary: #E01CB9;
+    --danger: tomato;
+    --warning: #FFA903;
+    --success: #51DC91;
+    --success-dark: #48B479;
+    --dark-grey: #9b9b9b;
+    --grey: #e9e9e9;
+    --dark: #333;
+}
+
+body {
+    background: var(--grey);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-dark);
+}
+
+/* Beautiful Scroll */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--grey);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--dark-grey);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+}
+
+/* End of Beautiful Scroll */
+
+.shadow {
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}

@@ -1,17 +1,17 @@
 <template>
   <div class="container-bg">
     <ContainerBlock>
-      <LoginForm />
+      <RegisterForm/>
     </ContainerBlock>
   </div>
 </template>
 
 <script>
 import ContainerBlock from "@/components/ContainerBlock/ContainerBlock.vue";
-import LoginForm from "@/components/LoginForm/LoginForm.vue";
+import RegisterForm from "@/components/RegisterForm/RegisterForm.vue";
 
 export default {
-  components: { LoginForm, ContainerBlock },
+  components: { RegisterForm, ContainerBlock },
 };
 </script>
 

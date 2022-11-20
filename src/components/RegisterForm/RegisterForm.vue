@@ -6,6 +6,11 @@
     </header>
 
     <div class="form-group">
+      <label for="name">Nome Completo</label>
+      <input type="text" id="name" v-model="name" placeholder="Nome Completo" />
+    </div>
+
+    <div class="form-group">
       <label for="email">E-mail</label>
       <input type="email" id="email" v-model="email" placeholder="E-mail" />
     </div>
@@ -19,27 +24,24 @@
         placeholder="Senha"
       />
     </div>
+
     <div class="text-center">
-      <router-link to="/register">Não tem uma conta? Cadastre-se</router-link>
+      <router-link to="/login">Já tem uma conta? Entrar</router-link>
       <br /><br />
-      <button type="submit" class="button-safe p-4">Entrar</button>
+      <button type="submit" class="button-safe p-4">Cadastrar</button>
     </div>
   </form>
-  <p class="my-4">OU</p>
-  <AuthButtons />
 </template>
 
 <script>
-import AuthButtons from "./AuthButtons.vue";
-
 export default {
   data() {
     return {
       email: "",
       password: "",
+      name: "",
     };
   },
-  components: { AuthButtons },
 };
 </script>
 
